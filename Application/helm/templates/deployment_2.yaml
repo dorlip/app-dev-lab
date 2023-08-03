@@ -17,7 +17,7 @@ spec:
         checksum/config: {{ include (print $.Template.BasePath "/ConfigMap.yaml") . | sha256sum }}
       labels:
 # set your lab user name
-        app2: {{ .Release.Name }}-2
+        app: {{ .Release.Name }}-2
     spec:
       volumes:
         - name: index-html
