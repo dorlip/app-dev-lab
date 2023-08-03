@@ -4,7 +4,7 @@ metadata:
 # set your lab user name
   name: {{ .Release.Name }}-1
   annotations:
-    argocd.argoproj.io/sync-wave: "5"
+    argocd.argoproj.io/sync-wave: 5
 spec:
   replicas: {{ .Values.ReplicaNumber }}
   selector:
