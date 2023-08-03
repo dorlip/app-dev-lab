@@ -34,4 +34,4 @@ test: Null
 github:
   user: dorlip
   token: empty-pass
-  url: <https://api.github.com/repos/dorlip/app-dev-lab/issues>
+  url: 'https://api.github.com/repos/dorlip/app-dev-lab/issues'
