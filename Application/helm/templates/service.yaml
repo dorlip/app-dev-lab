@@ -10,5 +10,5 @@ spec:
       targetPort: {{ .Values.containers.containerPort }}
   selector:
 # set your user name
-    app1: {{ .Release.Name }}-1
-    app2: {{ .Release.Name }}-2
+    app1: "{{ .Release.Name }}-1"
+    app2: "{{ .Release.Name }}-2"
