@@ -12,7 +12,6 @@ probes:
   readiness_1:
       path: '/health/readiness'
   readiness:
-
     initialDelaySeconds: 1
     timeoutSeconds: 1
     periodSeconds: 10 
