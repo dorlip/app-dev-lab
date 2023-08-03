@@ -10,7 +10,9 @@ spec:
 # set your lab user name
       app: {{ .Release.Name }}
   template:
-    metadata:
+    metadata:    
+      annotations:
+        rollme: {{ randAlphaNum 5 | quote }}
       labels:
 # set your lab user name
         app: {{ .Release.Name }}
