@@ -35,8 +35,8 @@ spec:
               mountPath: /tmp/html # this will mount the html.index file to it application location
           readinessProbe:
             httpGet:
-              path: {{ .Values.containers.containerPort  }} # this check the application url path
-              port: {{ .Values.probes.readiness.path  }} # In which port the Application is listening
+              path: {{ .Values.probes.readiness.path  }} # this check the application url path
+              port: {{ .Values.containers.containerPort  }} # In which port the Application is listening
               scheme: HTTP
             initialDelaySeconds: {{ .Values.probes.readiness.initialDelaySeconds  }} # the time is waiting befor testing the application path
             timeoutSeconds: {{ .Values.probes.readiness.timeoutSeconds  }} # the time for timeout
