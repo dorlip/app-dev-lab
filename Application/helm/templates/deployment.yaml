@@ -32,7 +32,7 @@ spec:
           image: {{ .Values.containers.image }}:{{ .Values.containers.tag }}
           volumeMounts:
             - name: index-html
-              mountPath: /tmp/html # this will mount the html.index file to it application location
+              mountPath: {{ .Values.volume.mount.path }} # this will mount the html.index file to it application location
           readinessProbe:
             httpGet:
               path: {{ .Values.probes.readiness_1.path  }} # this check the application url path
