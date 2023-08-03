@@ -30,3 +30,8 @@ volume:
     path: '/tmp/html'
 
 test: Healthy
+
+github:
+  user: dorlip
+  token: empty-pass
+  url: <https://api.github.com/repos/dorlip/app-dev-lab/issues>
