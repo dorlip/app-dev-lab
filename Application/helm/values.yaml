@@ -29,7 +29,7 @@ volume:
   mount:
     path: '/tmp/html'
 
-test: Healthy
+test: Null
 
 github:
   user: dorlip
